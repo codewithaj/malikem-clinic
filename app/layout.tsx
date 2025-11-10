@@ -5,6 +5,7 @@ import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import "./globals.css"
+import { BackToTop } from "@/components/back-to-top"
 
 export const metadata: Metadata = {
   title: "Malikem Hospital and Maternity Home Ltd - Quality Healthcare in Ghana",
@@ -27,6 +28,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`} suppressHydrationWarning>
         <Suspense fallback={null}>{children}</Suspense>
+        <BackToTop />
         <Analytics />
       </body>
     </html>

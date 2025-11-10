@@ -278,20 +278,22 @@ ${formData.reason || "Not specified"}`
                     Operating Hours
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-2">
-                  <div className="flex justify-between">
-                    <span>Monday - Friday</span>
-                    <span>8:00 AM - 6:00 PM</span>
+                <CardContent className="space-y-4">
+                  <div>
+                    <div className="text-sm font-semibold text-muted-foreground mb-1">Branch</div>
+                    <div className="flex justify-between">
+                      <span>Everyday</span>
+                      <span>8:00 AM - 5:00 PM</span>
+                    </div>
                   </div>
-                  <div className="flex justify-between">
-                    <span>Saturday</span>
-                    <span>9:00 AM - 4:00 PM</span>
+                  <div className="pt-3 border-t">
+                    <div className="text-sm font-semibold text-muted-foreground mb-1">Main Hospital</div>
+                    <div className="flex justify-between">
+                      <span>Open</span>
+                      <span>24 Hours</span>
+                    </div>
                   </div>
-                  <div className="flex justify-between">
-                    <span>Sunday</span>
-                    <span>Emergency Only</span>
-                  </div>
-                  <div className="pt-2 border-t">
+                  <div className="pt-3 border-t">
                     <div className="flex items-center gap-2 text-[oklch(0.65_0.18_145)]">
                       <CheckCircle className="h-4 w-4" />
                       <span className="text-sm font-medium">24/7 Emergency Services</span>

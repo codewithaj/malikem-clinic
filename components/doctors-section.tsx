@@ -52,6 +52,13 @@ const medicalTeam = [
     image: "/medical team/dr.Albert.png",
   },
   {
+    name: "Dr. Maxwell Manu",
+    specialty: "Anesthetist",
+    description:
+      "Specialist in anesthesia, providing expert care in pain management and ensuring patient safety and comfort before, during, and after surgical procedures.",
+    image: "/medical team/dr.Maxwell.jpg",
+  },
+  {
     name: "Dr. Eyram Kekeli Afutu",
     specialty: "Medical Officer",
     description:
@@ -59,14 +66,14 @@ const medicalTeam = [
     image: "/medical team/dr.Eyram.jpeg",
   },
   {
-    name: "Setornyo Aku Heh",
+    name: "Dr. Setornyo Aku Heh",
     specialty: "Medical Officer",
     description:
       "Supports patient care through medical assessments, diagnosis, treatment, and follow-up under the supervision of senior physicians.",
     image: "/medical team/dr. Setornyo.jpg",
   },
   {
-    name: "Isabella Osei",
+    name: "Dr. Isabella Osei",
     specialty: "Medical Officer",
     description:
       "Supports patient care through medical assessments, diagnosis, treatment, and follow-up under the supervision of senior physicians.",

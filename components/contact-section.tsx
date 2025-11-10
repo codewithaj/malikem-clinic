@@ -56,7 +56,7 @@ export function ContactSection() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Contact Information */}
           <div className="space-y-6">
             <Card className="bg-background border-border">
@@ -73,6 +73,8 @@ export function ContactSection() {
                   Accra, Ghana
                   <br />
                   GPS: GD-219-0751
+                  <br />
+                  <span className="text-foreground font-medium">Hours: 24 Hours</span>
                 </p>
               </CardContent>
             </Card>
@@ -91,6 +93,8 @@ export function ContactSection() {
                   Off Graphic Road, Accra
                   <br />
                   Phone: 0209922973
+                  <br />
+                  <span className="text-foreground font-medium">Hours: 8:00 AM - 5:00 PM</span>
                 </p>
               </CardContent>
             </Card>
@@ -120,6 +124,69 @@ export function ContactSection() {
               </CardContent>
             </Card>
 
+            
+          </div>
+
+          {/* Contact Form */}
+          <div className="space-y-6">
+            <Card className="bg-background border-border gap-4 pt-4 pb-0">
+              <CardHeader>
+                <CardTitle>Send us a Message</CardTitle>
+              </CardHeader>
+              <CardContent className="pb-4">
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div className="grid grid-cols-2 gap-6">
+                    <Input
+                      id="firstName"
+                      placeholder="First Name"
+                      value={formData.firstName}
+                      onChange={handleChange}
+                      required
+                    />
+                    <Input
+                      id="lastName"
+                      placeholder="Last Name"
+                      value={formData.lastName}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
+                  <Input
+                    id="email"
+                    placeholder="Email Address"
+                    type="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                  />
+                  <Input
+                    id="phone"
+                    placeholder="Phone Number"
+                    type="tel"
+                    value={formData.phone}
+                    onChange={handleChange}
+                  />
+                  <Input
+                    id="subject"
+                    placeholder="Subject"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    required
+                  />
+                  <Textarea
+                    id="message"
+                    placeholder="Your Message"
+                    rows={4}
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                  />
+                  <Button className="w-full bg-primary hover:bg-primary/90 mt-2">Send Message</Button>
+                </form>
+              </CardContent>
+            </Card>
+
+            {/* Email moved under form */}
             <Card className="bg-background border-border">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
@@ -132,6 +199,7 @@ export function ContactSection() {
               </CardContent>
             </Card>
 
+            {/* Emergency moved under form */}
             <Card className="bg-background border-border">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
@@ -144,64 +212,6 @@ export function ContactSection() {
               </CardContent>
             </Card>
           </div>
-
-          {/* Contact Form */}
-          <Card className="bg-background border-border">
-            <CardHeader>
-              <CardTitle>Send us a Message</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <form onSubmit={handleSubmit}>
-                <div className="grid grid-cols-2 gap-4">
-                  <Input
-                    id="firstName"
-                    placeholder="First Name"
-                    value={formData.firstName}
-                    onChange={handleChange}
-                    required
-                  />
-                  <Input
-                    id="lastName"
-                    placeholder="Last Name"
-                    value={formData.lastName}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-                <Input
-                  id="email"
-                  placeholder="Email Address"
-                  type="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                />
-                <Input
-                  id="phone"
-                  placeholder="Phone Number"
-                  type="tel"
-                  value={formData.phone}
-                  onChange={handleChange}
-                />
-                <Input
-                  id="subject"
-                  placeholder="Subject"
-                  value={formData.subject}
-                  onChange={handleChange}
-                  required
-                />
-                <Textarea
-                  id="message"
-                  placeholder="Your Message"
-                  rows={4}
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                />
-                <Button className="w-full bg-primary hover:bg-primary/90">Send Message</Button>
-              </form>
-            </CardContent>
-          </Card>
         </div>
       </div>
     </section>

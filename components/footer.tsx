@@ -20,11 +20,11 @@ export function Footer() {
               }
             }}>
               <Image
-                src="/images/malikem-logo.png"
+                src="/images/Malikem-footer-logo.png"
                 alt="Malikem Hospital"
-                width={150}
-                height={60}
-                className="h-10 w-auto brightness-0 invert cursor-pointer"
+                width={170}
+                height={70}
+                className="h-12 w-auto cursor-pointer"
               />
             </Link>
             <p className="text-sm text-background/80 leading-relaxed">

@@ -58,7 +58,7 @@ export function Header() {
   return (
     <header className="bg-background border-b border-border sticky top-0 z-50">
       {/* Top bar with contact info */}
-      <div className="bg-primary text-primary-foreground py-1 sm:py-2">
+      <div className="bg-primary text-primary-foreground py-0 sm:py-1">
         <div className="container mx-auto px-4">
           <div className="flex flex-col sm:flex-row justify-between items-center text-xs sm:text-sm gap-1 sm:gap-2">
             <div className="flex items-center gap-2 sm:gap-4">
@@ -80,16 +80,16 @@ export function Header() {
       </div>
 
       {/* Main navigation */}
-      <div className="container mx-auto px-4 py-2 sm:py-4">
+      <div className="container mx-auto px-4 py-0 sm:py-0">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
-              src="/images/malikem-logo.png"
+              src="/images/malikem-logo.JPG"
               alt="Malikem Hospital and Maternity Home Ltd"
-              width={240}
-              height={100}
-              className="h-12 sm:h-16 w-auto"
+              width={380}
+              height={160}
+              className="h-20 sm:h-24 w-auto"
             />
           </Link>
 
