@@ -86,7 +86,8 @@ export function Header() {
             <img
               src="/images/malikem-logo.jpg"
               alt="Malikem Hospital and Maternity Home Ltd"
-              className="h-12 sm:h-16 w-auto"
+              className="h-12 sm:h-16 w-auto object-contain"
+              loading="eager"
             />
           </Link>
 
