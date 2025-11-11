@@ -85,7 +85,7 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
-              src="/images/malikem-logo.jpg"
+              src="public/images/malikem-logo.jpg"
               alt="Malikem Hospital and Maternity Home Ltd"
               width={380}
               height={160}
