@@ -3,7 +3,6 @@
 import type React from "react"
 
 import { useState } from "react"
-import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X, Phone, Clock, MapPin } from "lucide-react"
@@ -84,13 +83,10 @@ export function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <Image
-              src="public/images/malikem-logo.jpg"
+            <img
+              src="/images/malikem-logo.jpg"
               alt="Malikem Hospital and Maternity Home Ltd"
-              width={380}
-              height={160}
               className="h-12 sm:h-16 w-auto"
-              priority
             />
           </Link>
 
