@@ -58,21 +58,21 @@ export function Header() {
   return (
     <header className="bg-background border-b border-border sticky top-0 z-50">
       {/* Top bar with contact info */}
-      <div className="bg-primary text-primary-foreground py-0 sm:py-1">
+      <div className="bg-primary text-primary-foreground py-0.5">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col sm:flex-row justify-between items-center text-xs sm:text-sm gap-1 sm:gap-2">
-            <div className="flex items-center gap-2 sm:gap-4">
+          <div className="flex flex-col sm:flex-row justify-between items-center text-xs gap-0.5 sm:gap-2">
+            <div className="flex items-center gap-2 sm:gap-3">
               <div className="flex items-center gap-1">
-                <Phone className="h-3 w-3 sm:h-4 sm:w-4" />
+                <Phone className="h-2.5 w-2.5 sm:h-3 sm:w-3" />
                 <span>+233 24 123 4567</span>
               </div>
               <div className="flex items-center gap-1">
-                <Clock className="h-3 w-3 sm:h-4 sm:w-4" />
+                <Clock className="h-2.5 w-2.5 sm:h-3 sm:w-3" />
                 <span>24/7 Emergency</span>
               </div>
             </div>
             <div className="flex items-center gap-1">
-              <MapPin className="h-3 w-3 sm:h-4 sm:w-4" />
+              <MapPin className="h-2.5 w-2.5 sm:h-3 sm:w-3" />
               <span>Accra, Ghana</span>
             </div>
           </div>
@@ -80,7 +80,7 @@ export function Header() {
       </div>
 
       {/* Main navigation */}
-      <div className="container mx-auto px-4 py-0 sm:py-0">
+      <div className="container mx-auto px-4 py-0.5">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center">
@@ -89,45 +89,45 @@ export function Header() {
               alt="Malikem Hospital and Maternity Home Ltd"
               width={380}
               height={160}
-              className="h-20 sm:h-24 w-auto"
+              className="h-12 sm:h-16 w-auto"
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-foreground hover:text-primary transition-colors">
+          <nav className="hidden md:flex items-center space-x-6">
+            <Link href="/" className="text-foreground hover:text-primary transition-colors text-sm">
               Home
             </Link>
             <a
               href="#services"
               onClick={(e) => handleSmoothScroll(e, "services")}
-              className="text-foreground hover:text-primary transition-colors cursor-pointer"
+              className="text-foreground hover:text-primary transition-colors cursor-pointer text-sm"
             >
               Services
             </a>
             <a
               href="#about"
               onClick={(e) => handleSmoothScroll(e, "about")}
-              className="text-foreground hover:text-primary transition-colors cursor-pointer"
+              className="text-foreground hover:text-primary transition-colors cursor-pointer text-sm"
             >
               About Us
             </a>
             <a
               href="#doctors"
               onClick={(e) => handleSmoothScroll(e, "doctors")}
-              className="text-foreground hover:text-primary transition-colors cursor-pointer"
+              className="text-foreground hover:text-primary transition-colors cursor-pointer text-sm"
             >
               Our Team
             </a>
             <a
               href="#contact"
               onClick={(e) => handleSmoothScroll(e, "contact")}
-              className="text-foreground hover:text-primary transition-colors cursor-pointer"
+              className="text-foreground hover:text-primary transition-colors cursor-pointer text-sm"
             >
               Contact
             </a>
             <Link href="/book-appointment">
-              <Button className="bg-primary hover:bg-primary/90">Book Appointment</Button>
+              <Button className="bg-primary hover:bg-primary/90 text-sm h-8 px-4">Book Appointment</Button>
             </Link>
           </nav>
 
@@ -139,8 +139,8 @@ export function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4 border-t border-border pt-4">
-            <div className="flex flex-col space-y-3">
+          <nav className="md:hidden mt-2 pb-2 border-t border-border pt-2">
+            <div className="flex flex-col space-y-2">
               <Link 
                 href="/" 
                 className="text-foreground hover:text-primary transition-colors py-2 px-3 rounded-md hover:bg-muted"
